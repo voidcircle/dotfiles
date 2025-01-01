@@ -1,0 +1,23 @@
+[core]
+  excludesfile = ~/.gitignore
+  editor = nvim
+  ignorecase = false
+[init]
+	defaultBranch = master
+[push]
+  default = simple
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+  ui = auto
+[hub]
+  protocol = ssh
+[github]
+  user = voidsupernova
+  email = voidsupernova@gmail.com
+[user]
+  name =voidsupernova 
+  email = voidsupernova@gmail.com 
