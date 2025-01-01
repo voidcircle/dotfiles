@@ -1,7 +1,7 @@
 set fish_greeting """"""
 
 alias asdf "brew update && brew upgrade"
-alias l "eza -a -l -s type --git --header --icons --no-user --no-time --color-scale --context --git-repos"
+alias s "eza --extended --all --long --sort type --git --header --icons --color-scale --context --git-repos"
 alias t "eza -a --tree --level"
 alias remove "rm -rf ~/.local/share/nvim/swap && rm ~/.local/state/nvim/lsp.log && rm -rf ~/.local/state/nvim/swap"
 alias cdp "cd ../"
@@ -26,9 +26,19 @@ alias gbr "git branch"
 alias gst "git status"
 alias gd "git diff"
 
-alias hist "log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all"
-alias llog "log --graph --name-status --pretty=format:\"%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset\" --date=relative"
+alias hist "git log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all"
+alias llog "git log --graph --name-status --pretty=format:\"%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset\" --date=relative"
 
 alias gv "git add . && git commit && git push"
+
+# Homebrew
+export HOMEBREW_NO_ENV_HINTS
+
+# Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Rust
+source "$HOME/.cargo/env.fish"
 
 clear

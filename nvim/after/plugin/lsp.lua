@@ -22,6 +22,8 @@ local on_attach = function(_, bufnr)
 
 	map("n", "<C-n>", "<Cmd>Lspsaga diagnostic_jump_next<CR>", current_opts)
 	map("n", "<C-p>", "<Cmd>Lspsaga diagnostic_jump_prev<CR>", current_opts)
+
+	vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
 end
 
 local default_settings = {
@@ -37,7 +39,6 @@ lspconfig.cssls.setup(default_settings)
 lspconfig.dartls.setup(default_settings)
 lspconfig.fsharp_language_server.setup(default_settings)
 lspconfig.gopls.setup(default_settings)
--- lspconfig.grammarly.setup(default_settings)
 lspconfig.graphql.setup(default_settings)
 lspconfig.html.setup(default_settings)
 lspconfig.java_language_server.setup(default_settings)
@@ -45,6 +46,27 @@ lspconfig.jsonls.setup(default_settings)
 
 lspconfig.ts_ls.setup(default_settings)
 
+lspconfig.rust_analyzer.setup({
+	on_attach = on_attach,
+	settings = {
+		["rust-analyzer"] = {
+			imports = {
+				granularity = {
+					group = "module",
+				},
+				prefix = "self",
+			},
+			cargo = {
+				buildScripts = {
+					enable = true,
+				},
+			},
+			procMacro = {
+				enable = true,
+			},
+		},
+	},
+})
 lspconfig.lua_ls.setup({
 	-- capabilities = capabilities,
 	on_attach = on_attach,

@@ -6,7 +6,6 @@ conform.setup({
 		javascriptreact = { "biome" },
 		typescript = { "biome" },
 		typescriptreact = { "biome" },
-		vue = { "prettier" },
 		html = { "prettier" },
 		css = { "prettier" },
 		scss = { "prettier" },
@@ -16,12 +15,10 @@ conform.setup({
 		jsonc = { "prettier" },
 		yaml = { "prettier" },
 
-		go = { "goimports", "gofumpt" },
-		python = { "isort", "black" },
+		python = { "black" },
 
 		markdown = { "prettier" },
 		["markdown.mdx"] = { "prettier" },
-		graphql = { "prettier" },
 
 		rust = { "rustfmt" },
 		lua = { "stylua" },
