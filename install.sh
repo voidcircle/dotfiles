@@ -12,7 +12,7 @@ brew install neovim node git npm bat fish eza
 
 echo "Installing lsps, linters, formatters..."
 
-brew install rust rustup lua-language-server shfmt biome prettier black stylua
+brew install rust rustup lua-language-server yaml-language-server typescript-language-server shfmt biome prettier black stylua
 
 echo "Installing bun..."
 
@@ -74,3 +74,5 @@ echo """
 """
 
 ln -sv ~/.config/.gitconfig ~/.gitconfig
+ln -sv ~/.config/nvim/stylua.toml ~/.stylua.toml
+ln -sv ~/.config/.zprofile ~/.zprofile

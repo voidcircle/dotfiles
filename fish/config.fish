@@ -4,6 +4,8 @@ alias asdf "brew update && brew upgrade"
 alias s "eza --extended --all --long --sort type --git --header --icons --color-scale --context --git-repos"
 alias t "eza -a --tree --level"
 alias remove "rm -rf ~/.local/share/nvim/swap && rm ~/.local/state/nvim/lsp.log && rm -rf ~/.local/state/nvim/swap"
+alias v nvim
+alias cdp "cd ../"
 
 alias gk "git add . && git commit && git push"
 alias hist "git log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all"

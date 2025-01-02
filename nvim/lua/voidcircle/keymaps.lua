@@ -45,10 +45,10 @@ map("v", "<S-j>", "<cmd>+9<cr>")
 map("n", "<S-k>", "<cmd>-7<cr>")
 map("v", "<S-k>", "<cmd>-7<cr>")
 
-map("i", "<C-h>", "<Left>")
+-- map("i", "<C-h>", "<Left>")
 map("i", "<C-j>", "<Down>")
 map("i", "<C-k>", "<Up>")
-map("i", "<C-l>", "<Right>")
+-- map("i", "<C-l>", "<Right>")
 
 map("i", "<C-b>", "<esc>b")
 map("i", "<C-w>", "<esc>w")
@@ -57,8 +57,8 @@ map("i", "<C-o>", "<esc>O")
 map("i", "<C-Enter>", "<esc>o")
 
 map("n", "<C-d>", "dd")
-map("v", "<Tab>", ">gv")
-map("v", "<S-Tab>", "<gv")
+-- map("v", "<Tab>", ">gv")
+-- map("v", "<S-Tab>", "<gv")
 
 map("n", "<C-u>", "<cmd>DepsClean<cr><cmd>w<cr><cmd>DepsUpdate<cr><cmd>w<cr>", { desc = "Update packages" })
 map("n", "<leader>cp", "<cmd>MarkdownPreview<cr>", { desc = "Markdown Preview" })
