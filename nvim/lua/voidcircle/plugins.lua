@@ -25,8 +25,7 @@ add("echasnovski/mini.nvim")
 -- Theme
 add("nvim-tree/nvim-web-devicons")
 add("nvim-lua/plenary.nvim")
-add("tjdevries/colorbuddy.nvim")
-add("miikanissi/modus-themes.nvim")
+add("craftzdog/solarized-osaka.nvim")
 add("nvim-treesitter/nvim-treesitter")
 
 -- Language Servers

@@ -1,6 +1,6 @@
 set fish_greeting """"""
 
-alias asdf "brew update && brew upgrade"
+alias asdf "brew update && brew upgrade && rustup update"
 alias s "eza --extended --all --long --sort type --git --header --icons --color-scale --context --git-repos"
 alias t "eza -a --tree --level"
 alias remove "rm -rf ~/.local/share/nvim/swap && rm ~/.local/state/nvim/lsp.log && rm -rf ~/.local/state/nvim/swap"

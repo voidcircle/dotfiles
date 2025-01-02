@@ -12,7 +12,11 @@ brew install neovim node git npm bat fish eza
 
 echo "Installing lsps, linters, formatters..."
 
-brew install rust rustup lua-language-server yaml-language-server typescript-language-server shfmt biome prettier black stylua
+brew install lua-language-server yaml-language-server typescript-language-server tailwindcss-language-server shfmt biome prettier black stylua
+
+echo "Installing rust..."
+
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 echo "Installing bun..."
 
