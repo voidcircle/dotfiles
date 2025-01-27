@@ -45,6 +45,7 @@ lspconfig.java_language_server.setup(default_settings)
 lspconfig.jsonls.setup(default_settings)
 lspconfig.ts_ls.setup(default_settings)
 lspconfig.rust_analyzer.setup(default_settings)
+lspconfig.zls.setup(default_settings)
 
 lspconfig.lua_ls.setup({
   capabilities = capabilities,

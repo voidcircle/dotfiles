@@ -4,7 +4,7 @@ echo "Installing homebrew..."
 
 echo "Installing applications..."
 
-brew install --cask google-chrome iterm2 github font-hack-nerd-font
+brew install --cask google-chrome iterm2 github font-hack-nerd-font keycastr
 
 echo "Installing development tools..."
 

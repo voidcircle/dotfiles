@@ -40,8 +40,8 @@ local menu_icons = {
 }
 
 local cmp_mapping = cmp.mapping.preset.insert({
-  ["<C-j>"] = cmp.mapping.scroll_docs(4),
-  ["<C-k>"] = cmp.mapping.scroll_docs(-4),
+  ["<C-j>"] = cmp.mapping.scroll_docs(1),
+  ["<C-k>"] = cmp.mapping.scroll_docs(-1),
   ["<C-e>"] = cmp.mapping.abort(),
   ["<CR>"] = cmp.mapping(function(fallback)
     if cmp.visible() then
@@ -105,9 +105,11 @@ cmp.setup({
   }),
   formatting = {
     format = function(entry, vim_item)
+      -- Ensure vim_item.kind is not nil
+      vim_item.kind = vim_item.kind or ""
+
       vim_item.kind = kind_icons[vim_item.kind] .. " " .. string.sub(string.upper(vim_item.kind), 0, 3)
       vim_item.menu = menu_icons[entry.source.name]
-
       return vim_item
     end,
   },
