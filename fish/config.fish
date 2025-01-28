@@ -8,6 +8,9 @@ alias cdp "cd ../"
 alias v nvim
 alias vr "nvim ./src/main.rs"
 
+alias ga "git add ."
+alias gi "git commit"
+alias gp "git push"
 alias gk "git add . && git commit && git push"
 alias hist "git log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all"
 alias llog "git log --graph --name-status --pretty=format:\"%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset\" --date=relative"
