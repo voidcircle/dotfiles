@@ -15,8 +15,7 @@ alias gk "git add . && git commit && git push"
 alias hist "git log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all"
 alias llog "git log --graph --name-status --pretty=format:\"%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset\" --date=relative"
 
-alias crun "gcc main.c && ./a.out"
-alias rp "eval (history | head -n 1)"
+alias rr "RUSTFLAGS=\"-Awarnings\" cargo run --quiet"
 
 function mkcd
     mkdir -p $argv
@@ -29,7 +28,6 @@ export HOMEBREW_NO_ENV_HINTS
 # Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$PATH:$BUN_INSTALL/bin"
-export PATH="$PATH:$HOME/Documents/softwares/iit/target/debug"
 
 # Rust
 source "$HOME/.cargo/env.fish"
